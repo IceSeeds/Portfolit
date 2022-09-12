@@ -1,0 +1,694 @@
+#top {
+  background-color: silver;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#top p {
+  font-size: clamp(20px, 5vw, 80px);
+}
+#top nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#top nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#top nav ul li {
+  padding: 10px;
+  margin: 0 10px;
+  font-size: clamp(15px, 3vw, 30px);
+}
+#top nav ul li img {
+  width: 50px;
+  height: auto;
+}
+#top nav ul .move-top a {
+  background-color: darkgrey;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  border-radius: 20px;
+  z-index: 1001;
+  text-align: center;
+  font-size: 30px;
+}
+
+#about {
+  background-color: silver;
+  width: 100%;
+  height: 100vh;
+}
+#about .about-wrapper {
+  height: 100%;
+  padding: 8%;
+}
+#about .about-wrapper h2 {
+  text-align: center;
+  font-size: clamp(15px, 5vw, 60px);
+  padding-bottom: 5%;
+}
+#about .about-wrapper p {
+  padding-top: 3%;
+  font-size: clamp(5px, 3vw, 25px);
+}
+
+#works {
+  background-color: silver;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
+#works .works-wrapper {
+  height: 100%;
+  padding: 8% 5%;
+}
+#works .works-wrapper h2 {
+  text-align: center;
+  font-size: clamp(15px, 5vw, 60px);
+  padding-bottom: 5%;
+}
+#works .works-wrapper .work-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+}
+#works .works-wrapper .work-list .work {
+  text-align: center;
+  flex: 0 0 500px;
+  margin: 2%;
+  position: relative;
+}
+#works .works-wrapper .work-list .work .skill-list {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#works .works-wrapper .work-list .work .skill-list p {
+  background-color: beige;
+  color: black;
+  padding: 5px;
+  margin: 0 0 5px 5px;
+  border-radius: 10px;
+}
+#works .works-wrapper .work-list .work img {
+  width: 100%;
+  height: 100%;
+}
+
+#skills {
+  background-color: silver;
+  width: 100%;
+  height: 100vh;
+  padding: 8% 5%;
+}
+#skills h2 {
+  text-align: center;
+  font-size: clamp(15px, 5vw, 60px);
+  padding-bottom: 5%;
+}
+#skills .skills-wrapper {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+#skills .skills-wrapper .backend, #skills .skills-wrapper .frontend, #skills .skills-wrapper .devops {
+  width: 100%;
+  height: 100%;
+  margin: 0 20px;
+}
+#skills .skills-wrapper .backend h3, #skills .skills-wrapper .frontend h3, #skills .skills-wrapper .devops h3 {
+  text-align: center;
+  font-size: clamp(15px, 5vw, 25px);
+}
+#skills .skills-wrapper .backend .mql4, #skills .skills-wrapper .frontend .mql4, #skills .skills-wrapper .devops .mql4 {
+  margin: 10px 0;
+}
+#skills .skills-wrapper .backend .mql4 .parsent, #skills .skills-wrapper .frontend .mql4 .parsent, #skills .skills-wrapper .devops .mql4 .parsent {
+  width: 100%;
+  text-align: right;
+}
+#skills .skills-wrapper .backend .mql4 .graph-wrap, #skills .skills-wrapper .frontend .mql4 .graph-wrap, #skills .skills-wrapper .devops .mql4 .graph-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#skills .skills-wrapper .backend .mql4 .graph-wrap .name, #skills .skills-wrapper .frontend .mql4 .graph-wrap .name, #skills .skills-wrapper .devops .mql4 .graph-wrap .name {
+  width: 200px;
+  text-align: right;
+  padding-right: 8px;
+}
+#skills .skills-wrapper .backend .mql4 .graph-wrap .graph-back, #skills .skills-wrapper .frontend .mql4 .graph-wrap .graph-back, #skills .skills-wrapper .devops .mql4 .graph-wrap .graph-back {
+  background-color: whitesmoke;
+  position: relative;
+  width: 100%;
+  height: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+#skills .skills-wrapper .backend .mql4 .graph-wrap .graph-back .graph, #skills .skills-wrapper .frontend .mql4 .graph-wrap .graph-back .graph, #skills .skills-wrapper .devops .mql4 .graph-wrap .graph-back .graph {
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #03a9f4;
+  width: 95%;
+  border-radius: 0 4px 4px 0;
+}
+#skills .skills-wrapper .backend .mql5, #skills .skills-wrapper .frontend .mql5, #skills .skills-wrapper .devops .mql5 {
+  margin: 10px 0;
+}
+#skills .skills-wrapper .backend .mql5 .parsent, #skills .skills-wrapper .frontend .mql5 .parsent, #skills .skills-wrapper .devops .mql5 .parsent {
+  width: 100%;
+  text-align: right;
+}
+#skills .skills-wrapper .backend .mql5 .graph-wrap, #skills .skills-wrapper .frontend .mql5 .graph-wrap, #skills .skills-wrapper .devops .mql5 .graph-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#skills .skills-wrapper .backend .mql5 .graph-wrap .name, #skills .skills-wrapper .frontend .mql5 .graph-wrap .name, #skills .skills-wrapper .devops .mql5 .graph-wrap .name {
+  width: 200px;
+  text-align: right;
+  padding-right: 8px;
+}
+#skills .skills-wrapper .backend .mql5 .graph-wrap .graph-back, #skills .skills-wrapper .frontend .mql5 .graph-wrap .graph-back, #skills .skills-wrapper .devops .mql5 .graph-wrap .graph-back {
+  background-color: whitesmoke;
+  position: relative;
+  width: 100%;
+  height: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+#skills .skills-wrapper .backend .mql5 .graph-wrap .graph-back .graph, #skills .skills-wrapper .frontend .mql5 .graph-wrap .graph-back .graph, #skills .skills-wrapper .devops .mql5 .graph-wrap .graph-back .graph {
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #03a9f4;
+  width: 80%;
+  border-radius: 0 4px 4px 0;
+}
+#skills .skills-wrapper .backend .c, #skills .skills-wrapper .frontend .c, #skills .skills-wrapper .devops .c {
+  margin: 10px 0;
+}
+#skills .skills-wrapper .backend .c .parsent, #skills .skills-wrapper .frontend .c .parsent, #skills .skills-wrapper .devops .c .parsent {
+  width: 100%;
+  text-align: right;
+}
+#skills .skills-wrapper .backend .c .graph-wrap, #skills .skills-wrapper .frontend .c .graph-wrap, #skills .skills-wrapper .devops .c .graph-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#skills .skills-wrapper .backend .c .graph-wrap .name, #skills .skills-wrapper .frontend .c .graph-wrap .name, #skills .skills-wrapper .devops .c .graph-wrap .name {
+  width: 200px;
+  text-align: right;
+  padding-right: 8px;
+}
+#skills .skills-wrapper .backend .c .graph-wrap .graph-back, #skills .skills-wrapper .frontend .c .graph-wrap .graph-back, #skills .skills-wrapper .devops .c .graph-wrap .graph-back {
+  background-color: whitesmoke;
+  position: relative;
+  width: 100%;
+  height: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+#skills .skills-wrapper .backend .c .graph-wrap .graph-back .graph, #skills .skills-wrapper .frontend .c .graph-wrap .graph-back .graph, #skills .skills-wrapper .devops .c .graph-wrap .graph-back .graph {
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #03a9f4;
+  width: 60%;
+  border-radius: 0 4px 4px 0;
+}
+#skills .skills-wrapper .backend .cplus, #skills .skills-wrapper .frontend .cplus, #skills .skills-wrapper .devops .cplus {
+  margin: 10px 0;
+}
+#skills .skills-wrapper .backend .cplus .parsent, #skills .skills-wrapper .frontend .cplus .parsent, #skills .skills-wrapper .devops .cplus .parsent {
+  width: 100%;
+  text-align: right;
+}
+#skills .skills-wrapper .backend .cplus .graph-wrap, #skills .skills-wrapper .frontend .cplus .graph-wrap, #skills .skills-wrapper .devops .cplus .graph-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#skills .skills-wrapper .backend .cplus .graph-wrap .name, #skills .skills-wrapper .frontend .cplus .graph-wrap .name, #skills .skills-wrapper .devops .cplus .graph-wrap .name {
+  width: 200px;
+  text-align: right;
+  padding-right: 8px;
+}
+#skills .skills-wrapper .backend .cplus .graph-wrap .graph-back, #skills .skills-wrapper .frontend .cplus .graph-wrap .graph-back, #skills .skills-wrapper .devops .cplus .graph-wrap .graph-back {
+  background-color: whitesmoke;
+  position: relative;
+  width: 100%;
+  height: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+#skills .skills-wrapper .backend .cplus .graph-wrap .graph-back .graph, #skills .skills-wrapper .frontend .cplus .graph-wrap .graph-back .graph, #skills .skills-wrapper .devops .cplus .graph-wrap .graph-back .graph {
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #03a9f4;
+  width: 50%;
+  border-radius: 0 4px 4px 0;
+}
+#skills .skills-wrapper .backend .python, #skills .skills-wrapper .frontend .python, #skills .skills-wrapper .devops .python {
+  margin: 10px 0;
+}
+#skills .skills-wrapper .backend .python .parsent, #skills .skills-wrapper .frontend .python .parsent, #skills .skills-wrapper .devops .python .parsent {
+  width: 100%;
+  text-align: right;
+}
+#skills .skills-wrapper .backend .python .graph-wrap, #skills .skills-wrapper .frontend .python .graph-wrap, #skills .skills-wrapper .devops .python .graph-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#skills .skills-wrapper .backend .python .graph-wrap .name, #skills .skills-wrapper .frontend .python .graph-wrap .name, #skills .skills-wrapper .devops .python .graph-wrap .name {
+  width: 200px;
+  text-align: right;
+  padding-right: 8px;
+}
+#skills .skills-wrapper .backend .python .graph-wrap .graph-back, #skills .skills-wrapper .frontend .python .graph-wrap .graph-back, #skills .skills-wrapper .devops .python .graph-wrap .graph-back {
+  background-color: whitesmoke;
+  position: relative;
+  width: 100%;
+  height: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+#skills .skills-wrapper .backend .python .graph-wrap .graph-back .graph, #skills .skills-wrapper .frontend .python .graph-wrap .graph-back .graph, #skills .skills-wrapper .devops .python .graph-wrap .graph-back .graph {
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #03a9f4;
+  width: 80%;
+  border-radius: 0 4px 4px 0;
+}
+#skills .skills-wrapper .backend .django, #skills .skills-wrapper .frontend .django, #skills .skills-wrapper .devops .django {
+  margin: 10px 0;
+}
+#skills .skills-wrapper .backend .django .parsent, #skills .skills-wrapper .frontend .django .parsent, #skills .skills-wrapper .devops .django .parsent {
+  width: 100%;
+  text-align: right;
+}
+#skills .skills-wrapper .backend .django .graph-wrap, #skills .skills-wrapper .frontend .django .graph-wrap, #skills .skills-wrapper .devops .django .graph-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#skills .skills-wrapper .backend .django .graph-wrap .name, #skills .skills-wrapper .frontend .django .graph-wrap .name, #skills .skills-wrapper .devops .django .graph-wrap .name {
+  width: 200px;
+  text-align: right;
+  padding-right: 8px;
+}
+#skills .skills-wrapper .backend .django .graph-wrap .graph-back, #skills .skills-wrapper .frontend .django .graph-wrap .graph-back, #skills .skills-wrapper .devops .django .graph-wrap .graph-back {
+  background-color: whitesmoke;
+  position: relative;
+  width: 100%;
+  height: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+#skills .skills-wrapper .backend .django .graph-wrap .graph-back .graph, #skills .skills-wrapper .frontend .django .graph-wrap .graph-back .graph, #skills .skills-wrapper .devops .django .graph-wrap .graph-back .graph {
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #03a9f4;
+  width: 70%;
+  border-radius: 0 4px 4px 0;
+}
+#skills .skills-wrapper .backend .mysql, #skills .skills-wrapper .frontend .mysql, #skills .skills-wrapper .devops .mysql {
+  margin: 10px 0;
+}
+#skills .skills-wrapper .backend .mysql .parsent, #skills .skills-wrapper .frontend .mysql .parsent, #skills .skills-wrapper .devops .mysql .parsent {
+  width: 100%;
+  text-align: right;
+}
+#skills .skills-wrapper .backend .mysql .graph-wrap, #skills .skills-wrapper .frontend .mysql .graph-wrap, #skills .skills-wrapper .devops .mysql .graph-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#skills .skills-wrapper .backend .mysql .graph-wrap .name, #skills .skills-wrapper .frontend .mysql .graph-wrap .name, #skills .skills-wrapper .devops .mysql .graph-wrap .name {
+  width: 200px;
+  text-align: right;
+  padding-right: 8px;
+}
+#skills .skills-wrapper .backend .mysql .graph-wrap .graph-back, #skills .skills-wrapper .frontend .mysql .graph-wrap .graph-back, #skills .skills-wrapper .devops .mysql .graph-wrap .graph-back {
+  background-color: whitesmoke;
+  position: relative;
+  width: 100%;
+  height: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+#skills .skills-wrapper .backend .mysql .graph-wrap .graph-back .graph, #skills .skills-wrapper .frontend .mysql .graph-wrap .graph-back .graph, #skills .skills-wrapper .devops .mysql .graph-wrap .graph-back .graph {
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #03a9f4;
+  width: 55%;
+  border-radius: 0 4px 4px 0;
+}
+#skills .skills-wrapper .backend .htmlcss, #skills .skills-wrapper .frontend .htmlcss, #skills .skills-wrapper .devops .htmlcss {
+  margin: 10px 0;
+}
+#skills .skills-wrapper .backend .htmlcss .parsent, #skills .skills-wrapper .frontend .htmlcss .parsent, #skills .skills-wrapper .devops .htmlcss .parsent {
+  width: 100%;
+  text-align: right;
+}
+#skills .skills-wrapper .backend .htmlcss .graph-wrap, #skills .skills-wrapper .frontend .htmlcss .graph-wrap, #skills .skills-wrapper .devops .htmlcss .graph-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#skills .skills-wrapper .backend .htmlcss .graph-wrap .name, #skills .skills-wrapper .frontend .htmlcss .graph-wrap .name, #skills .skills-wrapper .devops .htmlcss .graph-wrap .name {
+  width: 200px;
+  text-align: right;
+  padding-right: 8px;
+}
+#skills .skills-wrapper .backend .htmlcss .graph-wrap .graph-back, #skills .skills-wrapper .frontend .htmlcss .graph-wrap .graph-back, #skills .skills-wrapper .devops .htmlcss .graph-wrap .graph-back {
+  background-color: whitesmoke;
+  position: relative;
+  width: 100%;
+  height: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+#skills .skills-wrapper .backend .htmlcss .graph-wrap .graph-back .graph, #skills .skills-wrapper .frontend .htmlcss .graph-wrap .graph-back .graph, #skills .skills-wrapper .devops .htmlcss .graph-wrap .graph-back .graph {
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #03a9f4;
+  width: 70%;
+  border-radius: 0 4px 4px 0;
+}
+#skills .skills-wrapper .backend .javascript, #skills .skills-wrapper .frontend .javascript, #skills .skills-wrapper .devops .javascript {
+  margin: 10px 0;
+}
+#skills .skills-wrapper .backend .javascript .parsent, #skills .skills-wrapper .frontend .javascript .parsent, #skills .skills-wrapper .devops .javascript .parsent {
+  width: 100%;
+  text-align: right;
+}
+#skills .skills-wrapper .backend .javascript .graph-wrap, #skills .skills-wrapper .frontend .javascript .graph-wrap, #skills .skills-wrapper .devops .javascript .graph-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#skills .skills-wrapper .backend .javascript .graph-wrap .name, #skills .skills-wrapper .frontend .javascript .graph-wrap .name, #skills .skills-wrapper .devops .javascript .graph-wrap .name {
+  width: 200px;
+  text-align: right;
+  padding-right: 8px;
+}
+#skills .skills-wrapper .backend .javascript .graph-wrap .graph-back, #skills .skills-wrapper .frontend .javascript .graph-wrap .graph-back, #skills .skills-wrapper .devops .javascript .graph-wrap .graph-back {
+  background-color: whitesmoke;
+  position: relative;
+  width: 100%;
+  height: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+#skills .skills-wrapper .backend .javascript .graph-wrap .graph-back .graph, #skills .skills-wrapper .frontend .javascript .graph-wrap .graph-back .graph, #skills .skills-wrapper .devops .javascript .graph-wrap .graph-back .graph {
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #03a9f4;
+  width: 75%;
+  border-radius: 0 4px 4px 0;
+}
+#skills .skills-wrapper .backend .jquery, #skills .skills-wrapper .frontend .jquery, #skills .skills-wrapper .devops .jquery {
+  margin: 10px 0;
+}
+#skills .skills-wrapper .backend .jquery .parsent, #skills .skills-wrapper .frontend .jquery .parsent, #skills .skills-wrapper .devops .jquery .parsent {
+  width: 100%;
+  text-align: right;
+}
+#skills .skills-wrapper .backend .jquery .graph-wrap, #skills .skills-wrapper .frontend .jquery .graph-wrap, #skills .skills-wrapper .devops .jquery .graph-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#skills .skills-wrapper .backend .jquery .graph-wrap .name, #skills .skills-wrapper .frontend .jquery .graph-wrap .name, #skills .skills-wrapper .devops .jquery .graph-wrap .name {
+  width: 200px;
+  text-align: right;
+  padding-right: 8px;
+}
+#skills .skills-wrapper .backend .jquery .graph-wrap .graph-back, #skills .skills-wrapper .frontend .jquery .graph-wrap .graph-back, #skills .skills-wrapper .devops .jquery .graph-wrap .graph-back {
+  background-color: whitesmoke;
+  position: relative;
+  width: 100%;
+  height: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+#skills .skills-wrapper .backend .jquery .graph-wrap .graph-back .graph, #skills .skills-wrapper .frontend .jquery .graph-wrap .graph-back .graph, #skills .skills-wrapper .devops .jquery .graph-wrap .graph-back .graph {
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #03a9f4;
+  width: 60%;
+  border-radius: 0 4px 4px 0;
+}
+#skills .skills-wrapper .backend .sass, #skills .skills-wrapper .frontend .sass, #skills .skills-wrapper .devops .sass {
+  margin: 10px 0;
+}
+#skills .skills-wrapper .backend .sass .parsent, #skills .skills-wrapper .frontend .sass .parsent, #skills .skills-wrapper .devops .sass .parsent {
+  width: 100%;
+  text-align: right;
+}
+#skills .skills-wrapper .backend .sass .graph-wrap, #skills .skills-wrapper .frontend .sass .graph-wrap, #skills .skills-wrapper .devops .sass .graph-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#skills .skills-wrapper .backend .sass .graph-wrap .name, #skills .skills-wrapper .frontend .sass .graph-wrap .name, #skills .skills-wrapper .devops .sass .graph-wrap .name {
+  width: 200px;
+  text-align: right;
+  padding-right: 8px;
+}
+#skills .skills-wrapper .backend .sass .graph-wrap .graph-back, #skills .skills-wrapper .frontend .sass .graph-wrap .graph-back, #skills .skills-wrapper .devops .sass .graph-wrap .graph-back {
+  background-color: whitesmoke;
+  position: relative;
+  width: 100%;
+  height: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+#skills .skills-wrapper .backend .sass .graph-wrap .graph-back .graph, #skills .skills-wrapper .frontend .sass .graph-wrap .graph-back .graph, #skills .skills-wrapper .devops .sass .graph-wrap .graph-back .graph {
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #03a9f4;
+  width: 65%;
+  border-radius: 0 4px 4px 0;
+}
+#skills .skills-wrapper .backend .react, #skills .skills-wrapper .frontend .react, #skills .skills-wrapper .devops .react {
+  margin: 10px 0;
+}
+#skills .skills-wrapper .backend .react .parsent, #skills .skills-wrapper .frontend .react .parsent, #skills .skills-wrapper .devops .react .parsent {
+  width: 100%;
+  text-align: right;
+}
+#skills .skills-wrapper .backend .react .graph-wrap, #skills .skills-wrapper .frontend .react .graph-wrap, #skills .skills-wrapper .devops .react .graph-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#skills .skills-wrapper .backend .react .graph-wrap .name, #skills .skills-wrapper .frontend .react .graph-wrap .name, #skills .skills-wrapper .devops .react .graph-wrap .name {
+  width: 200px;
+  text-align: right;
+  padding-right: 8px;
+}
+#skills .skills-wrapper .backend .react .graph-wrap .graph-back, #skills .skills-wrapper .frontend .react .graph-wrap .graph-back, #skills .skills-wrapper .devops .react .graph-wrap .graph-back {
+  background-color: whitesmoke;
+  position: relative;
+  width: 100%;
+  height: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+#skills .skills-wrapper .backend .react .graph-wrap .graph-back .graph, #skills .skills-wrapper .frontend .react .graph-wrap .graph-back .graph, #skills .skills-wrapper .devops .react .graph-wrap .graph-back .graph {
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #03a9f4;
+  width: 20%;
+  border-radius: 0 4px 4px 0;
+}
+#skills .skills-wrapper .backend .git, #skills .skills-wrapper .frontend .git, #skills .skills-wrapper .devops .git {
+  margin: 10px 0;
+}
+#skills .skills-wrapper .backend .git .parsent, #skills .skills-wrapper .frontend .git .parsent, #skills .skills-wrapper .devops .git .parsent {
+  width: 100%;
+  text-align: right;
+}
+#skills .skills-wrapper .backend .git .graph-wrap, #skills .skills-wrapper .frontend .git .graph-wrap, #skills .skills-wrapper .devops .git .graph-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#skills .skills-wrapper .backend .git .graph-wrap .name, #skills .skills-wrapper .frontend .git .graph-wrap .name, #skills .skills-wrapper .devops .git .graph-wrap .name {
+  width: 200px;
+  text-align: right;
+  padding-right: 8px;
+}
+#skills .skills-wrapper .backend .git .graph-wrap .graph-back, #skills .skills-wrapper .frontend .git .graph-wrap .graph-back, #skills .skills-wrapper .devops .git .graph-wrap .graph-back {
+  background-color: whitesmoke;
+  position: relative;
+  width: 100%;
+  height: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+#skills .skills-wrapper .backend .git .graph-wrap .graph-back .graph, #skills .skills-wrapper .frontend .git .graph-wrap .graph-back .graph, #skills .skills-wrapper .devops .git .graph-wrap .graph-back .graph {
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #03a9f4;
+  width: 80%;
+  border-radius: 0 4px 4px 0;
+}
+#skills .skills-wrapper .backend .selenium, #skills .skills-wrapper .frontend .selenium, #skills .skills-wrapper .devops .selenium {
+  margin: 10px 0;
+}
+#skills .skills-wrapper .backend .selenium .parsent, #skills .skills-wrapper .frontend .selenium .parsent, #skills .skills-wrapper .devops .selenium .parsent {
+  width: 100%;
+  text-align: right;
+}
+#skills .skills-wrapper .backend .selenium .graph-wrap, #skills .skills-wrapper .frontend .selenium .graph-wrap, #skills .skills-wrapper .devops .selenium .graph-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#skills .skills-wrapper .backend .selenium .graph-wrap .name, #skills .skills-wrapper .frontend .selenium .graph-wrap .name, #skills .skills-wrapper .devops .selenium .graph-wrap .name {
+  width: 200px;
+  text-align: right;
+  padding-right: 8px;
+}
+#skills .skills-wrapper .backend .selenium .graph-wrap .graph-back, #skills .skills-wrapper .frontend .selenium .graph-wrap .graph-back, #skills .skills-wrapper .devops .selenium .graph-wrap .graph-back {
+  background-color: whitesmoke;
+  position: relative;
+  width: 100%;
+  height: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+#skills .skills-wrapper .backend .selenium .graph-wrap .graph-back .graph, #skills .skills-wrapper .frontend .selenium .graph-wrap .graph-back .graph, #skills .skills-wrapper .devops .selenium .graph-wrap .graph-back .graph {
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #03a9f4;
+  width: 90%;
+  border-radius: 0 4px 4px 0;
+}
+#skills .skills-wrapper .backend .visualstudio, #skills .skills-wrapper .frontend .visualstudio, #skills .skills-wrapper .devops .visualstudio {
+  margin: 10px 0;
+}
+#skills .skills-wrapper .backend .visualstudio .parsent, #skills .skills-wrapper .frontend .visualstudio .parsent, #skills .skills-wrapper .devops .visualstudio .parsent {
+  width: 100%;
+  text-align: right;
+}
+#skills .skills-wrapper .backend .visualstudio .graph-wrap, #skills .skills-wrapper .frontend .visualstudio .graph-wrap, #skills .skills-wrapper .devops .visualstudio .graph-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#skills .skills-wrapper .backend .visualstudio .graph-wrap .name, #skills .skills-wrapper .frontend .visualstudio .graph-wrap .name, #skills .skills-wrapper .devops .visualstudio .graph-wrap .name {
+  width: 200px;
+  text-align: right;
+  padding-right: 8px;
+}
+#skills .skills-wrapper .backend .visualstudio .graph-wrap .graph-back, #skills .skills-wrapper .frontend .visualstudio .graph-wrap .graph-back, #skills .skills-wrapper .devops .visualstudio .graph-wrap .graph-back {
+  background-color: whitesmoke;
+  position: relative;
+  width: 100%;
+  height: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+#skills .skills-wrapper .backend .visualstudio .graph-wrap .graph-back .graph, #skills .skills-wrapper .frontend .visualstudio .graph-wrap .graph-back .graph, #skills .skills-wrapper .devops .visualstudio .graph-wrap .graph-back .graph {
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #03a9f4;
+  width: 60%;
+  border-radius: 0 4px 4px 0;
+}
+#skills .skills-wrapper .backend .aws, #skills .skills-wrapper .frontend .aws, #skills .skills-wrapper .devops .aws {
+  margin: 10px 0;
+}
+#skills .skills-wrapper .backend .aws .parsent, #skills .skills-wrapper .frontend .aws .parsent, #skills .skills-wrapper .devops .aws .parsent {
+  width: 100%;
+  text-align: right;
+}
+#skills .skills-wrapper .backend .aws .graph-wrap, #skills .skills-wrapper .frontend .aws .graph-wrap, #skills .skills-wrapper .devops .aws .graph-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#skills .skills-wrapper .backend .aws .graph-wrap .name, #skills .skills-wrapper .frontend .aws .graph-wrap .name, #skills .skills-wrapper .devops .aws .graph-wrap .name {
+  width: 200px;
+  text-align: right;
+  padding-right: 8px;
+}
+#skills .skills-wrapper .backend .aws .graph-wrap .graph-back, #skills .skills-wrapper .frontend .aws .graph-wrap .graph-back, #skills .skills-wrapper .devops .aws .graph-wrap .graph-back {
+  background-color: whitesmoke;
+  position: relative;
+  width: 100%;
+  height: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+#skills .skills-wrapper .backend .aws .graph-wrap .graph-back .graph, #skills .skills-wrapper .frontend .aws .graph-wrap .graph-back .graph, #skills .skills-wrapper .devops .aws .graph-wrap .graph-back .graph {
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #03a9f4;
+  width: 40%;
+  border-radius: 0 4px 4px 0;
+}/*# sourceMappingURL=style.css.map */
