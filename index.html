@@ -4,11 +4,224 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Portfolio</title>
 </head>
     <body>
+        <div id="top">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://qiita.com/IceSeed" target="_blank" rel="noopener noreferrer">
+                            <img src="./img/nav/qiita.webp" alt="qiita-img">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/IceSeeds/" target="_blank" rel="noopener noreferrer">
+                            <img src="./img/nav/github.webp" alt="github-img">
+                        </a>
+                    </li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#works">works</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li class="move-top">
+                        <a href="#top">↑</a>
+                    </li>
+                </ul>
+            </nav>
+            <p>Hasegawa Takumi Portfolio</p>
+        </div>
+        <div id="about">
+            <div class="about-wrapper">
+                <h2>about me</h2>
+                <p>1999年生まれ</p>
+                <p>中学時より独学でプログラミングを始め、情報系の高校に入学</p>
+                <p>2019年からFXツール開発の活動を開始した</p>
+            </div>
+        </div>
+        <div id="works">
+            <div class="works-wrapper">
+                <h2>works</h2>
+                <div class="work-list">
+                    <div class="work">
+                        <a href="https://www.gogojungle.co.jp/tools/indicators/35730" target="_blank" rel="noopener noreferrer">
+                            <img src="./img/works/mql4.webp" alt="mql4-works-img">
+                        </a>
+                        <div class="skill-list">
+                            <p class="use-skill">MQL4</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <a href="https://www.gogojungle.co.jp/tools/indicators/36699" target="_blank" rel="noopener noreferrer">
+                            <img src="./img/works/mql5.webp" alt="mql5-works-img">
+                        </a>
+                        <div class="skill-list">
+                            <p class="use-skill">MQL5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="skills">
+            <h2>skill set</h2>
+            <div class="skills-wrapper">
+                <div class="backend">
+                    <h3>back-end</h3>
+                    <div class="graph-item mql4">
+                        <p class="parsent">95%</p>
+                        <div class="graph-wrap">
+                            <p class="name">MQL4</p>
+                            <div class="graph-back">
+                                <div class="graph"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graph-item mql5">
+                        <p class="parsent">80%</p>
+                        <div class="graph-wrap">
+                            <p class="name">MQL4</p>
+                            <div class="graph-back">
+                                <div class="graph"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graph-item c">
+                        <p class="parsent">60%</p>
+                        <div class="graph-wrap">
+                            <p class="name">C</p>
+                            <div class="graph-back">
+                                <div class="graph"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graph-item cplus">
+                        <p class="parsent">50%</p>
+                        <div class="graph-wrap">
+                            <p class="name">C++</p>
+                            <div class="graph-back">
+                                <div class="graph"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graph-item python">
+                        <p class="parsent">80%</p>
+                        <div class="graph-wrap">
+                            <p class="name">Python</p>
+                            <div class="graph-back">
+                                <div class="graph"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graph-item django">
+                        <p class="parsent">70%</p>
+                        <div class="graph-wrap">
+                            <p class="name">Django</p>
+                            <div class="graph-back">
+                                <div class="graph"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graph-item mysql">
+                        <p class="parsent">55%</p>
+                        <div class="graph-wrap">
+                            <p class="name">MySQL</p>
+                            <div class="graph-back">
+                                <div class="graph"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <script src="./js/script.js"></script>
+                <div class="frontend">
+                    <h3>front-end</h3>
+                    <div class="graph-item htmlcss">
+                        <p class="parsent">70%</p>
+                        <div class="graph-wrap">
+                            <p class="name">HTML/CSS</p>
+                            <div class="graph-back">
+                                <div class="graph"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graph-item javascript">
+                        <p class="parsent">75%</p>
+                        <div class="graph-wrap">
+                            <p class="name">JavaScript</p>
+                            <div class="graph-back">
+                                <div class="graph"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graph-item jquery">
+                        <p class="parsent">60%</p>
+                        <div class="graph-wrap">
+                            <p class="name">jQuery</p>
+                            <div class="graph-back">
+                                <div class="graph"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graph-item sass">
+                        <p class="parsent">65%</p>
+                        <div class="graph-wrap">
+                            <p class="name">Sass</p>
+                            <div class="graph-back">
+                                <div class="graph"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graph-item react">
+                        <p class="parsent">20%</p>
+                        <div class="graph-wrap">
+                            <p class="name">React</p>
+                            <div class="graph-back">
+                                <div class="graph"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="devops">
+                    <h3>dev-ops</h3>
+                    <div class="graph-item git">
+                        <p class="parsent">80%</p>
+                        <div class="graph-wrap">
+                            <p class="name">git</p>
+                            <div class="graph-back">
+                                <div class="graph"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graph-item selenium">
+                        <p class="parsent">90%</p>
+                        <div class="graph-wrap">
+                            <p class="name">selenium</p>
+                            <div class="graph-back">
+                                <div class="graph"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graph-item visualstudio">
+                        <p class="parsent">60%</p>
+                        <div class="graph-wrap">
+                            <p class="name">VisualStudio</p>
+                            <div class="graph-back">
+                                <div class="graph"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graph-item aws">
+                        <p class="parsent">40%</p>
+                        <div class="graph-wrap">
+                            <p class="name">AWS</p>
+                            <div class="graph-back">
+                                <div class="graph"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
